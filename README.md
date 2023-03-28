@@ -1,1 +1,1 @@
-# AstroNvim custom
+# AstroNvim Custom
