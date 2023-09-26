@@ -26,7 +26,7 @@ return {
       "css",
       "diff",
       "go",
-      "help",
+      -- "help",
       "html",
       "java",
       "javascript",
