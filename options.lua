@@ -10,7 +10,7 @@ vim.g.icons_enabled = true -- disable icons in the UI (disable if no nerd font i
 vim.g.ui_notifications_enabled = true -- disable notifications when toggling UI elements
 
 -- Optional
-vim.opt.colorcolumn = "90"
+vim.opt.colorcolumn = "120"
 vim.opt.completeopt = { "menuone", "noinsert", "noselect" }
 vim.opt.listchars = {
   -- list of hidden characters
