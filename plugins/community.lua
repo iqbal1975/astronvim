@@ -1,16 +1,35 @@
 return {
   -- Add the community repository of plugin specifications
   "AstroNvim/astrocommunity",
-  -- example of imporing a plugin, comment out to use it or add your own
+  -- example of importing a plugin, comment out to use it or add your own
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
-  { import = "astrocommunity.colorscheme.catppuccin", enabled = false },
+  { import = "astrocommunity.bars-and-lines.heirline-mode-text-statusline" },
+
+  { import = "astrocommunity.colorscheme.catppuccin", enabled = true },
   { import = "astrocommunity.colorscheme.dracula-nvim", enabled = true },
   { import = "astrocommunity.colorscheme.rose-pine", enabled = true },
 
+  { import = "astrocommunity.completion.codeium-vim" },
+  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+
+  { import = "astrocommunity.editing-support.chatgpt-nvim" },
+  { import = "astrocommunity.editing-support.neogen" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.editing-support.zen-mode-nvim" },
+
+  { import = "astrocommunity.debugging.nvim-bqf" },
+  { import = "astrocommunity.debugging.nvim-dap-repl-highlights" },
+  { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
+  { import = "astrocommunity.debugging.persistent-breakpoints-nvim" },
+  { import = "astrocommunity.debugging.telescope-dap-nvim" },
+
+  { import = "astrocommunity.git.octo-nvim" },
+
+  { import = "astrocommunity.markdown-and-latex.vimtex" },
+
+  { import = "astrocommunity.media.vim-wakatime" },
 
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.cpp" },
@@ -28,7 +47,20 @@ return {
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.yaml" },
 
+  { import = "astrocommunity.project.nvim-spectre" },
+  { import = "astrocommunity.project.project-nvim" },
+  { import = "astrocommunity.project.projectmgr-nvim" },
+
+  { import = "astrocommunity.split-and-window.edgy-nvim" },
+
   { import = "astrocommunity.test.neotest" },
+
+  { import = "astrocommunity.utility.neodim" },
   { import = "astrocommunity.utility.noice-nvim" },
+  { import = "astrocommunity.utility.nvim-toggler" },
   { import = "astrocommunity.utility.telescope-fzy-native-nvim" },
+  { import = "astrocommunity.utility.telescope-live-grep-args-nvim" },
+
+  { import = "astrocommunity.workflow.bad-practices-nvim" },
+  -- { import = "astrocommunity.workflow.hardtime-nvim" },
 }

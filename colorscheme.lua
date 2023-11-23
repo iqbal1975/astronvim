@@ -1,2 +1,1 @@
--- return "catppuccin"
 return "dracula"
