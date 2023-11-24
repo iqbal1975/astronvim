@@ -25,9 +25,5 @@ return {
     config = function() require("fidget").setup() end,
   },
 
-  { "junegunn/vim-easy-align", event = "User AstroFile" },
-
-  { "machakann/vim-sandwich", event = "User AstroFile" },
-
   { "willothy/flatten.nvim", lazy = false, priority = 1001, opts = { window = { open = "vsplit" } } },
 }

@@ -53,6 +53,9 @@ return {
 
   { import = "astrocommunity.split-and-window.edgy-nvim" },
 
+  { import = "astrocommunity.syntax.vim-easy-align" },
+  { import = "astrocommunity.syntax.vim-sandwich" },
+
   { import = "astrocommunity.test.neotest" },
 
   { import = "astrocommunity.utility.neodim" },
