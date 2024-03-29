@@ -8,18 +8,6 @@ return {
     config = function() require("indent-tools").config {} end,
   },
 
-  -- { -- Trouble v2
-  --   "folke/trouble.nvim",
-  --   cmd = { "TroubleToggle", "Trouble" },
-  --   opts = {
-  --     use_diagnostic_signs = true,
-  --     action_keys = {
-  --       close = { "q", "<esc>" },
-  --       cancel = "<c-e>",
-  --     },
-  --   },
-  -- },
-
   {
     "ibhagwan/fzf-lua",
     -- optional for icon support

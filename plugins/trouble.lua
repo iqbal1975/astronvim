@@ -1,5 +1,17 @@
 return {
-  {
+  -- { -- Trouble v2
+  --   "folke/trouble.nvim",
+  --   cmd = { "TroubleToggle", "Trouble" },
+  --   opts = {
+  --     use_diagnostic_signs = true,
+  --     action_keys = {
+  --       close = { "q", "<esc>" },
+  --       cancel = "<c-e>",
+  --     },
+  --   },
+  -- },
+
+  { -- Trouble v3
     "folke/trouble.nvim",
     branch = "dev", -- IMPORTANT!
     keys = {
