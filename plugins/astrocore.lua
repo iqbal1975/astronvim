@@ -25,11 +25,27 @@ return {
     -- vim options can be configured here
     options = {
       opt = { -- vim.opt.<key>
-        relativenumber = true, -- sets vim.opt.relativenumber
+        colorcolumn = "120",
+        completeopt = { "menuone", "noinsert", "noselect" },
+        nrformats = { "alpha", "octal", "hex" },
         number = true, -- sets vim.opt.number
+        relativenumber = true, -- sets vim.opt.relativenumber
         spell = false, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
         wrap = false, -- sets vim.opt.wrap
+        listchars = {
+          -- list of hidden characters
+          tab = "» ",
+          trail = "•",
+          precedes = "←",
+          extends = "→",
+          eol = "↲",
+          space = "␣",
+        },
+        showbreak = "↪",
+        splitbelow = true,
+        splitright = true,
+        -- statuscolumn = "%l %r"
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
