@@ -1,4 +1,6 @@
--- customize mason plugins
+-- Customize Mason plugins
+
+---@type LazySpec
 return {
   {
     "williamboman/mason.nvim",
@@ -39,16 +41,17 @@ return {
         "pyright",
         "rust_analyzer",
         "tailwindcss",
-        "tsserver",
         "vimls",
         "yamlls",
         "zk",
+        -- add more arguments for adding more language servers
       },
     },
   },
   -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
   {
     "jay-babu/mason-null-ls.nvim",
+    -- overrides `require("mason-null-ls").setup(...)`
     opts = {
       ensure_installed = {
         "shellcheck",
@@ -58,11 +61,11 @@ return {
         "prettierd",
         "shfmt",
         "shellcheck",
+        -- add more arguments for adding more null-ls sources
       },
     },
     handlers = {
-      taplo = function()
-      end,                    -- disable taplo in null-ls, it's taken care of by lspconfig
+      taplo = function() end, -- disable taplo in null-ls, it's taken care of by lspconfig
     },
   },
   {
@@ -78,6 +81,7 @@ return {
         "php",
         "python",
         "rust",
+        -- add more arguments for adding more debuggers
       },
     },
   },
